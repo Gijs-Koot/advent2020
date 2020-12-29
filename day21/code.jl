@@ -55,6 +55,8 @@ safe = setdiff(ingredients, union(values(dd)...))
 mentions = vcat([r[1] for r in menu]...)
 ans = sum(map(x -> x ∈ safe, mentions))
 
+# part II
+
 choices = copy(dd)
 assignments = Dict{String, String}()
 
